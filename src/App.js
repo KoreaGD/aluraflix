@@ -1,9 +1,10 @@
 import React from 'react'
+import Menu from './components/Menu'
 
 export default function (){
     return (
         <div>
-            Hello World
+            <Menu />
         </div>
     )
 }
