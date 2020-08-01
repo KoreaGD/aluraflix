@@ -11,9 +11,6 @@ export const VideoContainer = styled.div`
   `;
 
 export const ResponsiveIframe = styled.iframe`
-  @media (min-width: 1100px){
-    padding-top: 0.3rem;
-  }
   position: absolute;
   top: 0;
   left: 0;
