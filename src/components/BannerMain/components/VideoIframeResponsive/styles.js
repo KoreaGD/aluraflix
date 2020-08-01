@@ -8,9 +8,12 @@ export const VideoContainer = styled.div`
   @media (max-width: 800px) {
     display: none;
   }
-`;
+  `;
 
 export const ResponsiveIframe = styled.iframe`
+  @media (min-width: 1100px){
+    padding-top: 0.3rem;
+  }
   position: absolute;
   top: 0;
   left: 0;
