@@ -41,9 +41,6 @@ export default function CadastroCategoria() {
         ]);
       });
   }, []);
-  useEffect(() => {
-    console.log(categorias);
-  }, [categorias]);
 
   return (
     <PageDefault>
@@ -81,7 +78,9 @@ export default function CadastroCategoria() {
           onChange={handleChange}
         />
 
-        <Button>
+        <Button
+          to="/cadastro/categoria"
+        >
           Cadastrar
         </Button>
       </form>
@@ -94,7 +93,7 @@ export default function CadastroCategoria() {
 
       <ul>
         {categorias.map((categoria) => (
-          <li key={`${categoria.nome}`}>
+          <li key={`${categoria.nome}_${categoria.id}`}>
             {categoria.nome}
           </li>
         ))}
