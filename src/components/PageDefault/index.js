@@ -12,7 +12,7 @@ const Main = styled.main`
     padding-left: 5%;
 `
 
-export default function ({ children }) {
+export default function PageDefault ({ children }) {
     return (
         <>
             <Menu />

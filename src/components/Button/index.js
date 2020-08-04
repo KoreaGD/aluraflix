@@ -1,10 +1,11 @@
-import styled from 'styled-components'
-import { Link } from 'react-router-dom'
+import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 const Button = styled(Link)`
     color: var(--white);
     border: 1px solid var(--white);
     box-sizing: border-box;
+    background: var(--background);
     cursor: pointer;
     padding: 16px 24px;
     font-style: normal;
@@ -19,8 +20,8 @@ const Button = styled(Link)`
 &:hover, &:focus {
     opacity: .5;
 }
-@media (max-width: 800px) {
-    &{
+@media (max-width: 800px){
+    &[name='nv']{
         position: fixed;
         left: 0;
         right: 0;
@@ -32,6 +33,6 @@ const Button = styled(Link)`
     }
 }
 
-`
+`;
 
-export default Button
+export default Button;
